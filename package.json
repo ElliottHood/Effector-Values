@@ -1,0 +1,12 @@
+{
+    "name": "com.shellter.effector-value",
+    "version": "1.0.0",
+    "displayName": "Effector Values",
+    "description": "Flexibly compose multiple animated variable inputs into a single output that can be altered at runtime",
+    "unity": "2022.3.44f1",
+    "author": {
+      "name": "Elliott Hood",
+      "email": "elliotthood0@gmail.com",
+      "url": "https://elliott-hood.com"
+    }
+}  
