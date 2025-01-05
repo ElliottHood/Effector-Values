@@ -8,5 +8,8 @@
       "name": "Elliott Hood",
       "email": "elliotthood0@gmail.com",
       "url": "https://elliott-hood.com"
+    },
+    "dependencies": {
+        "com.demigiant.dotween": "1.2.632"
     }
 }  
