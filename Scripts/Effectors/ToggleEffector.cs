@@ -4,7 +4,7 @@ using UnityEngine;
 namespace EffectorValues
 {
     /// <summary>
-    /// An effector that you can add to an EffectorValue that can be toggled on and off
+    /// An effector that can be toggled on and off
     /// - Animated transition between the two states
     /// - Waits for previous transition to finish before changing state
     /// </summary>

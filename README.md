@@ -1,17 +1,69 @@
 # Effector Values
 
-Flexibly combine multiple animated variable inputs into a single output that can be altered at runtime.
-
-## Overview
-
-Effector Values is a Unity package designed to streamline the process of managing code-based animations and complex values. By allowing you to compose multiple inputs into a single output, it provides a flexible and powerful way to control runtime values in your Unity projects.
-- Relies on Demigant's DOTween package
+Animate float values and combine them into a single output that can be altered at runtime.
 
 ## Features
 
-- Combine multiple animated inputs into a unified output.
-- Runtime flexibility for altering outputs dynamically.
+- Combine multiple animated inputs (Effectors) into a unified output (Effector Value).
+- Can edit individual animation parameters during runtime, including:
+    - Duration
+    - Easing
+    - Amplitude
+    - Period
 - Compatible with Unity 2022.3.44f1 and later.
+
+## Example Implementation
+
+![Demo](./Demo/EffectorValueDemo.gif)
+
+```csharp
+using EffectorValues;
+using UnityEngine;
+
+public class HeightEffectorDemo : MonoBehaviour
+{
+    [SerializeField] private TemporaryEffector temporaryEffector = TemporaryEffector.Default;
+    [SerializeField] private ToggleEffector toggleEffector = ToggleEffector.Default;
+    private AdditiveEffectorValue heightEffectorValue;
+
+    private void Awake()
+    {
+        // transform.position.y is the default value
+        heightEffectorValue = new AdditiveEffectorValue(transform.position.y); 
+
+        // Only add a toggle once, and turn it on and off with ToggleEffect()
+        heightEffectorValue.AddToggleableEffector(toggleEffector); 
+    }
+
+    public void TemporaryEffect()
+    {
+        // Add a new temporary effector each time you want to play the effect
+        heightEffectorValue.AddTemporaryEffector(temporaryEffector); 
+    }
+
+    public void ToggleEffect()
+    {
+        if (toggleEffector.Enabled)
+        {
+            toggleEffector.Disable();
+        }
+        else
+        {
+            toggleEffector.Enable();
+        }
+    }
+
+    private void Update()
+    {
+        // Read the sum of each effector and apply it to the transform
+        transform.position = new Vector3(transform.position.x, heightEffectorValue.Evaluate(), transform.position.z);
+    }
+}
+```
+
+## Dependencies
+
+- Relies on Demigant's DOTween package
 
 ## Installation
 

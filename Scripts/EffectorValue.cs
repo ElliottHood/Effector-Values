@@ -3,7 +3,7 @@ using System.Collections.Generic;
 namespace EffectorValues
 {
     /// <summary>
-    /// A single value that outputs the result of multiple animated inputs
+    /// A single value that outputs the result of multiple Effectors
     /// </summary>
     public abstract class EffectorValue
     {

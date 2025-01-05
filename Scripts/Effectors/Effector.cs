@@ -1,7 +1,7 @@
 namespace EffectorValues
 {
     /// <summary>
-    /// An input that can be added to an EffectorValue
+    /// A float input that can be added to an EffectorValue
     /// </summary>
     public abstract class Effector
     {
