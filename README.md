@@ -14,7 +14,7 @@ Animate float values and combine them into a single output that can be altered a
 
 ## Example Implementation
 
-![Demo](./Demo/EffectorValueDemo.gif)
+![Demo](./Samples/EffectorValueDemo.gif)
 
 ```csharp
 using EffectorValues;
