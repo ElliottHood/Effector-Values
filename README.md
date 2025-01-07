@@ -61,7 +61,7 @@ public class HeightEffectorDemo : MonoBehaviour
 }
 ```
 
-## Dependencies
+## Outside Dependencies
 
 - Relies on Demigant's DOTween package
 
