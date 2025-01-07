@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "displayName": "Effector Values",
     "description": "Animate float values and combine them into a single output that can be altered at runtime.",
-    "unity": "2022.3.44f1",
+    "unity": "2022.3.44",
     "author": {
       "name": "Elliott Hood",
       "email": "elliotthood0@gmail.com",
