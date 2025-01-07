@@ -9,9 +9,6 @@
       "email": "elliotthood0@gmail.com",
       "url": "https://elliott-hood.com"
     },
-    "exclude": [
-      "GithubResources"
-    ],
     "samples": [
       {
         "displayName": "Effector Value Demo",
