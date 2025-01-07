@@ -8,5 +8,12 @@
       "name": "Elliott Hood",
       "email": "elliotthood0@gmail.com",
       "url": "https://elliott-hood.com"
-    }
+    },
+    "samples": [
+      {
+        "displayName": "Effector Value Demo",
+        "description": "A sample scene to demonstrate the package.",
+        "path": "Samples/SampleScene.unity"
+      }
+    ]
 }  
