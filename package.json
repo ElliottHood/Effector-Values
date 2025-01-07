@@ -10,6 +10,6 @@
       "url": "https://elliott-hood.com"
     },
     "dependencies": {
-        "com.demigiant.dotween": "https://github.com/Demigiant/dotween"
+        "com.demigiant.dotween": "https://github.com/Demigiant/dotween.git"
     }
 }  
