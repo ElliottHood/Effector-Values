@@ -10,7 +10,7 @@
       "url": "https://elliott-hood.com"
     },
     "exclude": [
-      "Assets/GithubResources"
+      "GithubResources"
     ],
     "samples": [
       {
